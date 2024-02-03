@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(124, 124, 124);
+}
+
+#gameWindow {
+    border: 5px solid black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+}
+
+#background {
+    display: none;
+}
+
+#player{
+    display: none;
+}

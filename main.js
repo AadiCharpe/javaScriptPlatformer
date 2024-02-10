@@ -25,12 +25,12 @@ window.addEventListener('load', function() {
             this.player.update(this.Input.keys)
             this.player.draw(context);
             context.fillStyle = "red";
-            context.fillRect(300,425,300,10);
+            context.fillRect(305,425,295,10);
         }
     }
     const game = new Game(canvas.width, canvas.height);
     function animate() {
-        if((Date.now()-game.timer)>15){
+        if((Date.now()-game.timer)>20){
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             game.update();
             game.timer=Date.now()

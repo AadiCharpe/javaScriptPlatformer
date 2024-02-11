@@ -63,14 +63,13 @@ export class Player
             this.onPlat = false
         }
 
-        if (255 <= this.x && this.x <= 600&&!this.jump) // headbop Needs Fix
+        if (255 <= this.x && this.x <= 590&&this.jump) // headbop Needs Fix
         {
             // Slowly bring down the animation to ground
-            if (this.y < 310) {
+            if (this.y < 405 && this.y > 385) {
                 this.y += 15;
                 this.gravity = 10;
             }
-            console.log("hi");
         }
 
         if (this.y > 420)
@@ -87,7 +86,8 @@ export class Player
                 this.jump = false;
                 this.onPlat = true;
         }
-        else{
+        else
+        {
             this.y += this.gravity;
             this.gravity += 2;
         }
